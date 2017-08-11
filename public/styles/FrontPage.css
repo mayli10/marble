@@ -1,0 +1,13 @@
+.frontContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 125px;
+  font-family: 'American Typewriter';
+  font-size: 20px;
+}
+
+#marbleLogo {
+  height: 280px;
+  width: 300px;
+}
