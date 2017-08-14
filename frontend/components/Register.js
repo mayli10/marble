@@ -28,24 +28,29 @@ class Register extends React.Component {
           <form className="form" onSubmit={this.handleSubmit}>
             <div>
               <label>name:</label>
-              <input className="inputBox" type="text" value={this.state.name} onChange={(e)=>this.setState({name: e.target.value})} />
+              <input className="inputBox" type="text" value={this.state.name}
+                onChange={(e)=>this.setState({name: e.target.value})} />
             </div>
             <div>
               <label>email:</label>
-              <input className="inputBox" type="text" value={this.state.email} onChange={(e)=>this.setState({email: e.target.value})} />
+              <input className="inputBox" type="text" value={this.state.email}
+                onChange={(e)=>this.setState({email: e.target.value})} />
             </div>
             <div>
               <label>college:</label>
-              <input className="inputBox" type="text" value={this.state.college} onChange={(e)=>this.setState({college: e.target.value})} />
+              <input className="inputBox" type="text" value={this.state.college}
+                onChange={(e)=>this.setState({college: e.target.value})} />
             </div>
             <div>
               <label>username:</label>
-              <input className="inputBox" type="text" value={this.state.username} onChange={(e)=>this.setState({username: e.target.value})} />
+              <input className="inputBox" type="text" value={this.state.username}
+                onChange={(e)=>this.setState({username: e.target.value})} />
             </div>
 
             <div>
           <label>password:</label>
-            <input className="inputBox" type="password" value={this.state.password} onChange={(e)=>this.setState({password: e.target.value})} />
+            <input className="inputBox" type="password" value={this.state.password}
+              onChange={(e)=>this.setState({password: e.target.value})} />
 
             <ReactPasswordStrength
               className="password"
@@ -60,7 +65,8 @@ class Register extends React.Component {
 
             <div>
           <label>confirm password:</label>
-            <input className="inputBox" type="password" value={this.state.password2} onChange={(e)=>this.setState({password2: e.target.value})} />
+            <input className="inputBox" type="password" value={this.state.password2}
+              onChange={(e)=>this.setState({password2: e.target.value})} />
             </div>
           <div className='center-button'>
           <input className="btn btn-success" type="submit" value="Submit" />

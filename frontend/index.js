@@ -6,8 +6,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 const store = configureStore();
 
-render(
-    <BrowserRouter>
+render (<BrowserRouter>
       <Root store={store} history={history} />
     </BrowserRouter>,
     document.getElementById('root')

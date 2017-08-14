@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../public/styles/Login.css';
+import { Link } from 'react-router-dom';
+
 
 class Login extends React.Component {
   constructor(props) {
@@ -58,11 +60,10 @@ class Login extends React.Component {
             <input type="password" value={this.state.password}
               onChange={(event) => this.setState({password: event.target.value})} />
             </div>
-          <div className='center-button'>
-          <input className="button" type="submit" value="Login" />
-          <a className="button" type="submit" value="Register"
-            href="http://localhost:3000/register"/>
-          </div>
+            <div>
+            <Link className="register" to="/resourcemapview">login</Link>
+          <Link className="register" to="/register">register</Link>
+        </div>
           </form>
         </div>
     </div>

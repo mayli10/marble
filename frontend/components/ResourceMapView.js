@@ -7,8 +7,14 @@ import insurance from "../images/insurance.png";
 import greenCheck from "../images/greenCheck.png";
 import redCross from "../images/greenCheck.png";
 import vassarLogo from "../images/vassarLogo.png"
+
+import Insurance from "./Insurance.js";
+import insuranceList from "../dataList.js"
 import ReactStars from 'react-stars';
 import { render } from 'react-dom';
+
+
+
 
 
 import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
@@ -88,24 +94,9 @@ const GettingStartedGoogleMap = withGoogleMap(props => (
                         <h4>Insurance</h4>
                       </div>
 
-
                       <ul className='spec-list'>
-                        <li className='filter-insurance'>
-                          <a href="https://psychiatrists.psychologytoday.com/rms/prof_results.php?sid=1502409166.203_15467&amp;insurance=Y&amp;zipcode=94103"
-                          class="" title="Any Insurance">Any Insurance</a>
-                        </li>
-                        <li className='filter-insurance'>
-                          <a href="https://psychiatrists.psychologytoday.com/rms/prof_results.php?sid=1502409166.203_15467&amp;insurance=Y&amp;zipcode=94103"
-                          class="" title="United Healthcare">United Healthcare</a>
-                        </li>
-                        <li className='filter-insurance'>
-                          <a href="https://psychiatrists.psychologytoday.com/rms/prof_results.php?sid=1502409166.203_15467&amp;insurance=Y&amp;zipcode=94103"
-                          class="" title="Medi-cal">Medi-cal</a>
-                        </li>
-                        <li className='filter-insurance'>
-                          <a href="https://psychiatrists.psychologytoday.com/rms/prof_results.php?sid=1502409166.203_15467&amp;insurance=Y&amp;zipcode=94103"
-                          class="" title="Blue Cross">Blue Cross</a>
-                        </li>
+                        {insuranceList.map(item =>
+                          (<Insurance name= {item.name} url={item.url} key={item.name}/>))}
                       </ul>
                     </div>
 
@@ -118,14 +109,7 @@ const GettingStartedGoogleMap = withGoogleMap(props => (
 
             <div id='listView'>
               <div>
-                {/* <div className="wrap">
-                  <div className="search">
-                    <input type="text" className="searchTerm" placeholder="Search" />
-                    <button type="submit" className="searchButton">
-                      <i className="fa fa-search" />
-                    </button>
-                  </div>
-                </div> */}
+
                 <div className="listFirstInnerBox">
                   <div>
                     <div className='listInnerBox'>
