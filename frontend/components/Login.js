@@ -2,7 +2,6 @@ import React from 'react';
 import '../../public/styles/Login.css';
 import { Link } from 'react-router-dom';
 
-
 class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -11,38 +10,26 @@ class Login extends React.Component {
       password: '',
     };
   }
-  //
-  // handleSubmit() {
-  //   fetch('http://localhost:3000/', {
-  //     method: 'POST',
-  //     headers: {
-  //       "Content-Type": "application/json"
-  //     },
-  //     body: JSON.stringify({
-  //       username: this.state.username,
-  //       password: this.state.password,
-  //     })
-  //   })
-  //   .then((response) => response.json())
-  //   .then((responseJson) => {
-  //     console.log('this is my responseJson', responseJson);
-  //     console.log('this is my state username', this.state.username);
-  //     console.log('this is my state password', this.state.password);
-  //
-  //     if (responseJson.success) {
-  //         console.log('login is working', responseJson);
-  //         this.props.navigation.navigate('Register')
-  //       } else {
-  //         console.log('err')
-  //       }
-  //       /* do something if there was an error with fetching */
-  //     })
-  //    .catch((err) => {
-  //       if (!responseJson.success) {
-  //         console.log('error', err)
-  //       }
-  //   })
-  // }
+
+  handleSubmit() {
+    fetch('http://localhost:3000/login', {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        username: this.state.username,
+        password: this.state.password,
+      })
+    })
+    .then((response) => console.log(response))
+     .catch((err) => {
+       console.log(err,"some error happened")
+        if (!responseJson.success) {
+          console.log('error!!!!', err)
+        }
+    })
+  }
 
   render(){
     return(
@@ -60,9 +47,9 @@ class Login extends React.Component {
             <input type="password" value={this.state.password}
               onChange={(event) => this.setState({password: event.target.value})} />
             </div>
-            <div>
-            <Link className="register" to="/resourcemapview">login</Link>
-          <Link className="register" to="/register">register</Link>
+        <div className='center-button'>
+          <button className="button" onClick={() => this.handleSubmit()}>login</button>
+          <button className="button"><a href="/register">register</a></button>
         </div>
           </form>
         </div>

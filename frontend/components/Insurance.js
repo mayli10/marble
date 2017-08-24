@@ -7,8 +7,9 @@ class Insurance extends React.Component {
   render() {
     return (
       <li className='filter-insurance'>
-        <a href={this.props.url}
-        title={this.props.name}>{this.props.name}</a>
+        <input id="option" type="checkbox" className="filter-insurance"
+          defaultValue="option" onClick= {() => this.props.onClick()}/>
+        <label htmlFor="option">{this.props.name}</label>
       </li>
     )
   }

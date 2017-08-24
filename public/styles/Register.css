@@ -1,33 +1,32 @@
-body {
-  /*display: flex;*/
-  /*justify-content: center;
-  align-items: center;*/
-}
-
 .container2 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #FEE9A2;
-  height: 700px;
-  width: 700px;
+  height: 500px;
+  width: 500px;
   border-radius: 50px;
   border-width: 3px;
   border-style: solid;
   border-color: #F0F8FF;
   font-family: "Courier New";
-  margin-top: 15vh;
 }
 
 .password {
-  
+
+}
+
+.registerContainer {
+  display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
 }
 
 .button {
   position: relative;
   margin: 0 auto;
-  width: 60px;
+  width: 100px;
   display: block;
 }
 
@@ -43,5 +42,5 @@ h1 {
 .inputBox {
   float: right;
   height: 20px;
-  width: 500px;
+  width: 300px;
 }

@@ -6,7 +6,6 @@
      height: 100%;
      margin: 0;
      padding: 10px;
-     background-color: #FDF5CD;
    }
 
    #navBar {
@@ -15,7 +14,12 @@
      width: 100%;
      padding-top: 10px;
      padding-bottom: 20px;
-     background-color: #FEE9A2;
+     background-color: #F0F8FF;
+   }
+
+   .logoBar {
+     height: 70px;
+     width: 100px;
    }
 
    #notNav {
@@ -38,7 +42,6 @@
 
    .filterInnerBox {
      display: flex;
-
      flex: row;
      flex-wrap: wrap;
      background-color: white;
@@ -96,7 +99,7 @@
     flex-flow: wrap;
   }
 
-  .therapist1 {
+  .profImage {
     width: 150px;
     height: 150px;
     border-radius: 50px;
@@ -111,11 +114,11 @@
 
   .network {
     font-family: "Courier";
-    font-size: 15px;
+    font-size: 12px;
     padding-left: 25px;
   }
 
-  .greenCheck {
+  .crossCheckIcon {
     height: 12px;
     width: 15px
   }
@@ -129,10 +132,18 @@
      font-size: 15;
    }
 
-  .psychiatrist {
+  .psydIndicator {
     font-weight: bold;
     font-family: "Courier";
     background-color: lavender;
+    width: 112px;
+    font-size: 15px;
+  }
+
+  .mdIndicator {
+    font-weight: bold;
+    font-family: "Courier";
+    background-color: orange;
     width: 112px;
     font-size: 15px;
   }

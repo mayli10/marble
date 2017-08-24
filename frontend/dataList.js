@@ -1,178 +1,280 @@
+import therapist1 from "./images/therapist1.jpg";
+import therapist2 from "./images/therapist2.png";
+
 const insuranceList = [
-  { name: 'Any Healthcare',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'APS Healthcare',
+    clicked: false,
   },
-  { name: 'APS Healthcare',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Aetna',
+    clicked: false,
   },
-  { name: 'Aetna',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'American Behavioral',
+    clicked: false,
   },
-  { name: 'American Behavioral',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Anthem',
+    clicked: false,
   },
-  { name: 'Anthem',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Beacon',
+    clicked: false,
   },
-  { name: 'Beacon',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Beech Street',
+    clicked: false,
   },
-  { name: 'Beech Street',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Behavioral Health Systems',
+    clicked: false,
   },
-  { name: 'Behavioral Health Systems',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Blue Care Network',
+    clicked: false,
   },
-  { name: 'Blue Care Network',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Blue Cross',
+    clicked: false,
   },
-  { name: 'Blue Cross',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Blue Shield',
+    clicked: false,
   },
-  { name: 'Blue Shield',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Blue Cross and Blue Shield',
+    clicked: false,
   },
-  { name: 'Blue Cross and Blue Shield',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'CCN',
+    clicked: false,
   },
-  { name: 'CCN',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'CHIPA',
+    clicked: false,
   },
-  { name: 'CHIPA',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Cigna',
+    clicked: false,
   },
-  { name: 'Cigna',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'ComPsych',
+    clicked: false,
   },
-  { name: 'ComPsych',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Coventry',
+    clicked: false,
   },
-  { name: 'Coventry',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Empire BlueCross',
+    clicked: false,
   },
-  { name: 'Empire BlueCross',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'First Health',
+    clicked: false,
   },
-  { name: 'First Health',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'GEHA',
+    clicked: false,
   },
-  { name: 'GEHA',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'GHI',
+    clicked: false,
   },
-  { name: 'GHI',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Great-West Life',
+    clicked: false,
   },
-  { name: 'Great-West Life',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Guardian',
+    clicked: false,
   },
-  { name: 'Guardian',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Health Net',
+    clicked: false,
   },
-  { name: 'Health Net',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'HealthPartners',
+    clicked: false,
   },
-  { name: 'HealthPartners',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Holman Group',
+    clicked: false,
   },
-  { name: 'Holman Group',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Horizon Healthcare',
+    clicked: false,
   },
-  { name: 'Horizon Healthcare',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Humana',
+    clicked: false,
   },
-  { name: 'Humana',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Integrated Health Plan',
+    clicked: false,
   },
-  { name: 'Integrated Health Plan',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+   name: 'Interplan',
+    clicked: false,
   },
-  { name: 'Interplan',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Kaiser',
+    clicked: false,
   },
-  { name: 'Kaiser',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'LifeSynch',
+    clicked: false,
   },
-  { name: 'LifeSynch',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'MHN',
+    clicked: false,
   },
-  { name: 'MHN',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'MHNet Behavioral Health',
+    clicked: false,
   },
-  { name: 'MHNet Behavioral Health',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Magellan Behavioral Health',
+    clicked: false,
   },
-  { name: 'Magellan Behavioral Health',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Medicaid',
+    clicked: false,
   },
-  { name: 'Medicaid',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Medicare',
+    clicked: false,
   },
-  { name: 'Medicare',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Meridian',
+    clicked: false,
   },
-  { name: 'Meridian',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Molina',
+    clicked: false,
   },
-  { name: 'Molina',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Multiplan',
+    clicked: false,
   },
-  { name: 'Multiplan',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'NCPPO',
+    clicked: false,
   },
-  { name: 'NCPPO',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Optima',
+    clicked: false,
   },
-  { name: 'Optima',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Optum',
+    clicked: false,
   },
-  { name: 'Optum',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Oxford',
+    clicked: false,
   },
-  { name: 'Oxford',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'PHCS',
+    clicked: false,
   },
-  { name: 'PHCS',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'PacifiCare',
+    clicked: false,
   },
-  { name: 'PacifiCare',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Pacific Blue Cross',
+    clicked: false,
   },
-  { name: 'Pacific Blue Cross',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'PacificSource',
+    clicked: false,
   },
-  { name: 'PacificSource',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'PsychCare',
+    clicked: false,
   },
-  { name: 'PsychCare',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'Regence',
+    clicked: false,
   },
-  { name: 'Regence',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'TRICARE',
+    clicked: false,
   },
-  { name: 'TRICARE',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'TriWest',
+    clicked: false,
   },
-  { name: 'TriWest',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'UHA',
+    clicked: false,
   },
-  { name: 'UHA',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'UMR',
+    clicked: false,
   },
-  { name: 'UMR',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'UnitedHealthcare',
+    clicked: false,
   },
-  { name: 'UnitedHealthcare',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'ValueOptions',
+    clicked: false,
   },
-  { name: 'ValueOptions',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'WellCare',
+    clicked: false,
   },
-  { name: 'WellCare',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
-  },
-  { name: 'WellPoint',
-    url: 'https://psychiatrists.psychologytoday.com/rms/state/California.html'
+  {
+    name: 'WellPoint',
+    clicked: false,
   },
 ];
 
-export default insuranceList;
+const clientList = [
+  {
+    name: 'Jamie King',
+    profession: 'Psychiatrist',
+    image: therapist1,
+    number: '(999)-555-8888',
+    networks: ['UnitedHealthcare', 'Blue Cross', 'Medicare'],
+  },
+  {
+    name: 'David Jakubowicz',
+    profession: 'Psychologist',
+    image: therapist2,
+    number: '(777)-444-0000',
+    networks: ['Aetna', 'Anthem', 'PacifiCare'],
+  },
+  {
+    name: 'Mental Health America',
+    profession: 'Community Center',
+    image: therapist1,
+    number: '(777)-444-0000',
+    networks: ['Aetna', 'Anthem', 'PacifiCare'],
+  },
+  {
+    name: 'Brain Center',
+    profession: 'Psychiatric Test Center',
+    image: therapist1,
+    number: '(777)-444-0000',
+    networks: ['Aetna', 'Anthem', 'PacifiCare'],
+  },
+];
+
+const professionList = [
+  {
+    name: 'Psychiatrist',
+  },
+  {
+    name: 'Psychiatric Test Center',
+  },
+  {
+    name: 'Community Center',
+  },
+  {
+    name: 'Psychologist',
+  },
+]
+export { insuranceList, clientList, professionList};

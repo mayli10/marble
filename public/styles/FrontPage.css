@@ -2,12 +2,21 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 125px;
+  margin-top: 70px;
   font-family: 'American Typewriter';
   font-size: 20px;
 }
 
-#marbleLogo {
-  height: 280px;
-  width: 300px;
+#marbleLand {
+  height: 500px;
+  width: 700px;
+}
+
+img #marbleLand {
+  width: 100%;
+}
+
+.register {
+  position: absolute;
+  margin-top: 300px;
 }

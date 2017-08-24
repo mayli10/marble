@@ -10,4 +10,5 @@ render (<BrowserRouter>
       <Root store={store} history={history} />
     </BrowserRouter>,
     document.getElementById('root')
+    
 );

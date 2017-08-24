@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Amy Brown",
+    "insurances": ["UnitedHealthcare", "BlueCross", "Aetna"],
+    "location": "450 9th St, SoMa CA 94013",
+    "inNetwork": "true",
+    "image": "./frontend/images/therapist1.jpg",
+    "phone": 19499121302,
+  }
+]

@@ -12,16 +12,36 @@ class Register extends React.Component {
       college: '',
       username: '',
       password: '',
-      password2: '',
+      repeatPassword: '',
     };
   }
 
-  // function handleSubmit() {
-  //
-  // }
+handleSubmit() {
+  fetch('http://localhost:3000/register', {
+    method: 'POST',
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name: this.state.name,
+      email: this.state.email,
+      college: this.state.college,
+      username: this.state.username,
+      password: this.state.password,
+      repeatPassword: this.state.repeatPassword,
+    })
+  })
+  .then((response) => console.log(response))
+   .catch((err) => {
+      if (!responseJson.success) {
+        console.log('error', err)
+      }
+  })
+}
 
   render(){
     return(
+      <div className="registerContainer">
       <div className="container2">
         <h1>Register</h1>
         <div>
@@ -65,16 +85,17 @@ class Register extends React.Component {
 
             <div>
           <label>confirm password:</label>
-            <input className="inputBox" type="password" value={this.state.password2}
-              onChange={(e)=>this.setState({password2: e.target.value})} />
+            <input className="inputBox" type="password" value={this.state.repeatPassword}
+              onChange={(e)=>this.setState({repeatPassword: e.target.value})} />
             </div>
           <div className='center-button'>
-          <input className="btn btn-success" type="submit" value="Submit" />
-          <input className="button" type="submit" value="Login" />
+            <button className="button" onClick={() => this.handleSubmit()}><a href="/login">enter</a></button>
+            <button className="button"><a href="/login">login!</a></button>
           </div>
           </form>
         </div>
     </div>
+  </div>
     )
   }
 }
