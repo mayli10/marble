@@ -1,0 +1,42 @@
+<div className="registerContainer" style=
+"display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;">
+<div className="container2" style=
+"display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  border-radius: 50px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #F0F8FF;
+  font-family: 'Courier New';
+  font-size: 30px">
+  <h1>Login</h1>
+  <div>
+    <form action="/login" method="post">
+      <span style="padding: 5px">Username: <input type="text" name="username"/></span><br/>
+      <span style="padding: 5px">Password: <input type="password" name="password"/></span><br/>
+
+          <div className='center-button' style="position: relative; margin-top: 3vh">
+            <button className="button" style=
+            "position: relative;
+            margin: 0 auto;
+            width: 100px;
+            display: block">enter</button>
+            <div>
+              <button className="button" style=
+              "position: relative;
+              margin: 0 auto;
+              width: 100px;
+              display: block"><a href="/login">Register</a></button>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+      </div>

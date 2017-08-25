@@ -5,21 +5,25 @@
    body {
      height: 100%;
      margin: 0;
-     padding: 10px;
    }
 
+   .backColor {
+     background-color: #F0F8FF;
+   }
    #navBar {
      display: flex;
      justify-content: space-between;
      width: 100%;
      padding-top: 10px;
      padding-bottom: 20px;
-     background-color: #F0F8FF;
+     /*background-color: #F0F8FF;*/
    }
 
-   .logoBar {
-     height: 70px;
-     width: 100px;
+
+
+   .logoJar {
+     height: 90px;
+     width: 120px;
    }
 
    #notNav {
@@ -27,7 +31,7 @@
      flex-flow: wrap;
      align-items: flex-start;
      /*justify-content: space-around;*/
-     padding: 10px;
+     padding-top: 80px;
    }
 
    #filterView {

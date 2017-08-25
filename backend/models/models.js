@@ -13,6 +13,14 @@ var userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  college: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+  }
 })
 
 var User = mongoose.model('User', userSchema);

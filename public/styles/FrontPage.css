@@ -1,22 +1,62 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .frontContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 70px;
-  font-family: 'American Typewriter';
+  font-family: 'Palatino, Verdana, sans-serif, Helvetica, Times';
   font-size: 20px;
+  margin-bottom: 20px;
+  padding-left: -80px;
 }
 
-#marbleLand {
-  height: 500px;
-  width: 700px;
+#blueBackground {
+  height: 900px;
+  width: auto;
 }
 
-img #marbleLand {
+img #blueBackground {
   width: 100%;
 }
 
-.register {
+#navBar {
   position: absolute;
-  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.logoJar {
+  height: 70px;
+  width: 100px;
+  overflow: hidden;
+}
+
+.pill {
+  color: black;
+}
+
+.insidePill {
+  color: white;
+}
+
+.dropdown-menu {
+  padding: 5px;
+  font-family: 'Palatino, Verdana, sans-serif, Helvetica, Times';
+  margin-bottom: 5px;
+}
+
+.form {
+  position: absolute;
+  padding-top: 450px;
+}
+
+.colleges {
+  width: 550px;
+  margin-left: 50px;
 }

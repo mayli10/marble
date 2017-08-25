@@ -8,6 +8,7 @@ const session = require('express-session');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const auth = require('./backend/routes/auth');
+const exphbs = require('express-handlebars');
 
 const app = express();
 
@@ -19,14 +20,11 @@ app.use(bodyParser.json())
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('*', (request, response) => {
-    response.sendFile(__dirname + '/public/index.html'); // For React/Redux
-});
-
 const User = require('./backend/models/models.js').User;
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.engine('hbs', exphbs());
+app.set('views', path.join(__dirname, 'backend/views'));
 app.set('view engine', 'hbs');
 
 // uncomment after placing your favicon in /public
@@ -94,6 +92,10 @@ app.use(passport.session());
 
 
 app.use('/', auth(passport));
+
+app.get('*', (request, response) => {
+    response.sendFile(__dirname + '/public/index.html'); // For React/Redux
+});
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

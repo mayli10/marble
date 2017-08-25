@@ -1,0 +1,62 @@
+<!-- <div>
+  <h1>Register</h1>
+  <form action="/register" method="post">
+    <span>Username: <input type="text" name="username"/></span>
+    <span>Password: <input type="password" name="password"/></span>
+    <span>Repeat Password: <input type="password" name="repeatPassword"/></span>
+    <span>College: <input type="text" name="college"/></span>
+    <span>Email: <input type="text" name="email"/></span>
+    <button type="submit">Click here to register</button>
+  </form>
+</div>
+
+<div>
+  <button><a href="/login">Click here to log in instead</a></button>
+</div> -->
+
+<div className="registerContainer" style=
+"display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;">
+<div className="container2" style=
+"display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  border-radius: 50px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #F0F8FF;
+  font-family: 'Courier New';
+  font-size: 30px">
+  <h1>Register</h1>
+  <div>
+    <form action="/register" method="post">
+      <span style="padding: 5px">Name: <input type="text" name="name"/></span><br/>
+      <span style="padding: 5px">Username: <input type="text" name="username"/></span><br/>
+      <span style="padding: 5px">Password: <input type="password" name="password"/></span><br/>
+      <span style="padding: 5px">Repeat Password: <input type="password" name="repeatPassword"/></span><br/>
+      <span style="padding: 5px">College: <input type="text" name="college"/></span><br/>
+      <span style="padding: 5px">Email: <input type="text" name="email"/></span><br/>
+
+    <div className='center-button' style="position: relative; margin-top: 3vh">
+      <button className="button" style=
+      "position: relative;
+      margin: 0 auto;
+      width: 100px;
+      display: block">enter</button>
+      <div>
+        <button className="button" style=
+        "position: relative;
+        margin: 0 auto;
+        width: 100px;
+        display: block"><a href="/login">Switch to Log In</a></button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+</div>

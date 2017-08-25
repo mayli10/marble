@@ -12,7 +12,7 @@ import axios from 'axios';
 
 import therapist1 from "../images/therapist1.jpg";
 import therapist2 from "../images/therapist2.png";
-import marbleLand from "../images/marbleLand.png";
+import logoJar from "../images/logoJar.png";
 import insurance from "../images/insurance.png";
 import greenCheck from "../images/greenCheck.png";
 import redCross from "../images/redCross.png";
@@ -98,24 +98,30 @@ const GettingStartedGoogleMap = withGoogleMap(props => (
 
 
       return (
+        <div className="backColor">
         <div>
           <ul className="nav nav-pills" id='navBar'>
-            <Link to='/'><img className='logoBar' src={marbleLand}></img></Link>
-            <li role="presentation" className="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="">Profile</a></li>
-            <li role="presentation"><a href="#">Help Now</a></li>
-            <li role="presentation"><a href="/register">Sign Up</a></li>
-            <li role="presentation"><a href="/login">Login</a></li>
+            <Link to='/'><img className='logoJar' src={logoJar}></img></Link>
+            <li role="presentation"><a href="/mission" className='pill'>Our Mission</a></li>
+            <li role="presentation"><a href="/team" className='pill'>Team</a></li>
+            <li role="presentation"><a href="/faq" className='pill'>FAQ</a></li>
+            <li role="presentation"><a href="/register" className='pill'>Register</a></li>
+            {/* <li role="presentation"><a href="/login" className='pill'>Login</a></li> */}
             <li role="presentation" className="dropdown">
               <a className="dropdown-toggle" data-toggle="dropdown" href="#"
-                role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                role="button" aria-haspopup="true" aria-expanded="false" className='pill'>Login
                 <span className="caret"/>
               </a>
               <ul className="dropdown-menu">
-                yes
+                <form action="/login" method="post">
+                  <span>Username: <input type="text" name="username"/></span>
+                  <span>Password: <input type="password" name="password"/></span>
+                  <button type="submit">Log in</button>
+                </form>
               </ul>
             </li>
           </ul>
+        </div>
 
           <div id="notNav">
 

@@ -42,7 +42,7 @@ class CollegeSearch extends React.Component {
         <div>
           <form className="form" onSubmit={this.handleSubmit}>
             <div>
-              <input list="colleges" classNamename="colleges"/>
+              <input list="colleges" className="colleges"/>
               <datalist id="colleges">
                 <option value="George Washington University"/>
                 <option value="University of Pennsylvania"/>

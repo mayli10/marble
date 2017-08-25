@@ -89,7 +89,7 @@ handleSubmit() {
               onChange={(e)=>this.setState({repeatPassword: e.target.value})} />
             </div>
           <div className='center-button'>
-            <button className="button" onClick={() => this.handleSubmit()}><a href="/login">enter</a></button>
+            <button className="button" onClick={() => this.handleSubmit()}>enter</button>
             <button className="button"><a href="/login">login!</a></button>
           </div>
           </form>
