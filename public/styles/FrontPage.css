@@ -38,6 +38,7 @@ img #blueBackground {
 }
 
 .pill {
+  font-family: 'Futura';
   color: black;
 }
 
@@ -53,10 +54,14 @@ img #blueBackground {
 
 .form {
   position: absolute;
-  padding-top: 450px;
+  top: 450px;
 }
 
 .colleges {
   width: 550px;
   margin-left: 50px;
+}
+
+.button {
+  font-family: 'Futura';
 }

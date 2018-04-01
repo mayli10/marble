@@ -1,3 +1,4 @@
+require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const PORT = process.env.PORT || 3000;
@@ -9,6 +10,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const auth = require('./backend/routes/auth');
 const exphbs = require('express-handlebars');
+
 
 const app = express();
 

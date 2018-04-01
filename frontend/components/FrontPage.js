@@ -13,6 +13,15 @@ class FrontPage extends React.Component {
     return (
       <div className="frontContainer">
       <img id='blueBackground' src={marbleCrust}/>
+      <form className="form" action="/home" method="get">
+                <input list="colleges" className="colleges"/>
+                <datalist id="colleges">
+                  <option value="George Washington University"/>
+                  <option value="University of Pennsylvania"/>
+                  <option value="Vassar College"/>
+                </datalist>
+                <button type="submit">Enter</button>
+            </form>
       <ul className="nav nav-pills" id='navBar'>
         <Link to='/'><img className='logoJar' src={logoJar}></img></Link>
         <li role="presentation"><a href="/mission" className='pill'>Our Mission</a></li>
@@ -29,20 +38,11 @@ class FrontPage extends React.Component {
             <form action="/login" method="post">
               <span>Username: <input type="text" name="username"/></span>
               <span>Password: <input type="password" name="password"/></span>
-              <button type="submit">Log in</button>
+              <button className="button" type="submit">Log in</button>
             </form>
           </ul>
         </li>
       </ul>
-      <form className="form" action="/home" method="get">
-                <input list="colleges" className="colleges"/>
-                <datalist id="colleges">
-                  <option value="George Washington University"/>
-                  <option value="University of Pennsylvania"/>
-                  <option value="Vassar College"/>
-                </datalist>
-                <button type="submit">Enter</button>
-            </form>
           </div>
     )
   }

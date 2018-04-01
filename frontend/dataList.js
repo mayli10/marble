@@ -236,28 +236,28 @@ const clientList = [
   {
     name: 'Cathleen M Rybak',
     profession: 'Clinical Social Work/Therapist',
-    image: therapist1,https://cdn0.sussexdirectories.com/rms/rms_photos/…/69/74/197469-1011846-3_120x150.jpg?pu=1502216325
+    image: therapist1, //https://cdn0.sussexdirectories.com/rms/rms_photos/…/69/74/197469-1011846-3_120x150.jpg?pu=1502216325
     number: '(917) 765-8231',
     networks: ['UnitedHealthcare', 'Blue Cross', 'Medicare'],
   },
   {
     name: 'Sarah Marandi-Steeves',
     profession: 'Psychologist',
-    image: therapist2, https://cdn4.sussexdirectories.com/rms/rms_photos/…d/14/16/261614-562233-3_120x150.jpg?pu=1455940738
+    image: therapist2, //https://cdn4.sussexdirectories.com/rms/rms_photos/…d/14/16/261614-562233-3_120x150.jpg?pu=1455940738
     number: '(845) 943-2917',
     networks: ['Aetna', 'Anthem', 'PacifiCare'],
   },
   {
     name: 'Rita Lidia Lombardi',
     profession: 'Counselor',
-    image: therapist1, https://cdn2.sussexdirectories.com/rms/rms_photos/…d/87/56/225687-356800-2_120x150.jpg?pu=1489592608
+    image: therapist1, //https://cdn2.sussexdirectories.com/rms/rms_photos/…d/87/56/225687-356800-2_120x150.jpg?pu=1489592608
     number: '(917) 809-5760',
     networks: ['Aetna', 'Anthem', 'PacifiCare'],
   },
   {
     name: 'Peggy Kraft',
     profession: 'Clinical Social Work/Therapist',
-    image: therapist1, https://cdn0.sussexdirectories.com/rms/rms_photos/…d/89/24/122489-297153-3_120x150.jpg?pu=1493957310
+    image: therapist1, //https://cdn0.sussexdirectories.com/rms/rms_photos/…d/89/24/122489-297153-3_120x150.jpg?pu=1493957310
     number: '(845) 694-4494',
     networks: ['Aetna', 'Anthem', 'PacifiCare'],
   },
